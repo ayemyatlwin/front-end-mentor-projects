@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700&display=swap');
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+$font-family-sans-serif: 'Barlow', sans-serif;
+$headings-font-family:'Fraunces', serif;
+
+// Soft red: hsl(7, 99%, 70%)
+// - Yellow: hsl(51, 100%, 49%)
+// - Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+// - Dark blue (photography text): hsl(198, 62%, 26%)
+// - Dark moderate cyan (footer): hsl(168, 34%, 41%)
+
+
+$primary: black ;
+$white: hsl(0, 0%, 100%);
+
+  $position-values: (
+  0: 0,
+  10:10%,
+  25:25%,
+  50: 50%,
+  75:75%,
+  100: 100%
+);
+
+$max-width: (
+        10:10%,
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+);
+.tag{
+   width: 20px;
+    height: 5px;
+    border: 15px solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: white;
+    border-left-color: transparent;
+    margin-top: -12px;
+
+}
+
+
+p{
+  font-family:$font-family-sans-serif; 
+}
+li{
+  font-family:$font-family-sans-serif; 
+}
+
+.graphic{
+  color:  hsl(167, 40%, 24%);
+}
+.bb{
+  color:  hsl(198, 62%, 26%);
+}
+
+li a.btn{
+  background-color: white;
+}
+
+.font2{
+  font-family:'Fraunces', serif;
+
+}
+.cts{
+  letter-spacing: 1px;
+}
+.clients{
+  text-align: center;
+  
+}
+ul{
+  display: inline-block;
+}
+.list-group{
+  list-style-type: none;
+
+}
+ul li a{
+  text-decoration: none;
+}
+.footerr{
+  background-color:hsl(168, 34%, 41%);
+  color:hsl(167, 40%, 24%) ;
+  font-size: 20px;
+}
+.foot{
+  color:hsl(167, 40%, 24%) ;
+  font-size: 20px;
+
+}
+
+.txt1{
+  position: absolute;
+  top: -20px;
+}
+.topic{
+  z-index: 1050;
+}
+.attribution{
+  font-size: 18px;
+  text-align: center;
+}
+.attribution a{
+  color:hsl(228, 45%, 44%);
+}
+
+
+
+
+
+
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+@include media-breakpoint-down (lg) {
+  .colam-1{
+    flex-direction: column-reverse;
+  }
+  .navbar-collapse{
+  
+    position: relative;
+    background: white;
+    text-align: center;
+  }
+  li a{
+    color:grey;
+    font-family: $font-family-sans-serif;
+
+  }
+  li button{
+    margin: auto;
+    color: black;
+    font-family: $headings-font-family;
+    text-align:center;
+    background-color: orange !important;
+  }
+  
+}
+@include media-breakpoint-up(md){
+  .navbar-collapse li a {
+    color:hsl(0, 0%, 100%);
+
+  }
+  .navbar-collapse li button{
+    color: black;
+    background:white;
+    font-family: $headings-font-family;
+  }
+  .navbar-collapse li button:hover{
+    background-color:  rgb(135, 207, 238);
+    color:white;
+  }
+
+
+}
+
